@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyForm</class>
+ <widget class="QWidget" name="MyForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>434</width>
+    <height>234</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Robot</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(174, 174, 174);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer_9">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="MyLabel" name="Estat">
+       <property name="styleSheet">
+        <string notr="true">background-color:  red;</string>
+       </property>
+       <property name="text">
+        <string>Apagat</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_10">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="MyLabel" name="Control">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_8">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Onoff_button">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(186, 189, 182);</string>
+       </property>
+       <property name="text">
+        <string>&amp;On/Off</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>72</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="Moviments">
+     <item>
+      <layout class="QVBoxLayout" name="Direccions">
+       <item>
+        <layout class="QHBoxLayout" name="Fila_up">
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Up_button">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(186, 189, 182);</string>
+           </property>
+           <property name="text">
+            <string>Endavant</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="Fila_costats">
+         <item>
+          <widget class="QPushButton" name="Left_button">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(186, 189, 182);</string>
+           </property>
+           <property name="text">
+            <string>Esquerra</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>28</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Right_button">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(186, 189, 182);</string>
+           </property>
+           <property name="text">
+            <string>Dreta</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="Fila_down">
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Down_button">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(186, 189, 182);</string>
+           </property>
+           <property name="text">
+            <string>Enrera</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QDial" name="Gir">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(211, 215, 207);</string>
+       </property>
+       <property name="maximum">
+        <number>359</number>
+       </property>
+       <property name="value">
+        <number>180</number>
+       </property>
+       <property name="sliderPosition">
+        <number>180</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">MyLabel.h</header>
+   <slots>
+    <signal>enviaCont(int)</signal>
+    <slot>move_left()</slot>
+    <slot>gir()</slot>
+    <slot>move_front()</slot>
+    <slot>move_right()</slot>
+    <slot>move_back()</slot>
+    <slot>on_off()</slot>
+    <slot>conta()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Left_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Estat</receiver>
+   <slot>move_left()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>44</x>
+     <y>170</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>18</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Up_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Estat</receiver>
+   <slot>move_front()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>80</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>133</x>
+     <y>34</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Down_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Estat</receiver>
+   <slot>move_back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>108</x>
+     <y>200</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>108</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Right_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Estat</receiver>
+   <slot>move_right()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>158</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>133</x>
+     <y>34</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Gir</sender>
+   <signal>sliderPressed()</signal>
+   <receiver>Estat</receiver>
+   <slot>gir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>351</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>133</x>
+     <y>34</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Onoff_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Estat</receiver>
+   <slot>on_off()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>345</x>
+     <y>13</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>133</x>
+     <y>34</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Estat</sender>
+   <signal>enviaCont(int)</signal>
+   <receiver>Control</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>18</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>247</x>
+     <y>24</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
